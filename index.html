@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rasim Abbasov — Portfolio</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     NAV
+═══════════════════════════════════════════ -->
+<nav id="mainNav">
+  <div class="nav-logo" onclick="showPage('home')">
+    <div class="logo-dot"></div>Rasim Abbasov
+  </div>
+  <div class="nav-links">
+    <a href="#" id="nav-home" class="active"
+       onclick="showPage('home');scrollTo(0,0);return false;">Home</a>
+    <button onclick="navTo('about-anchor')">About</button>
+    <button onclick="navTo('projects-anchor')">Projects</button>
+    <button id="nav-resume" onclick="showPage('resume')">Resume</button>
+    <button class="nav-cta" onclick="navTo('contact-anchor')">Let's Talk</button>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════
+     HOME PAGE
+═══════════════════════════════════════════ -->
+<div class="page active" id="page-home">
+
+  <!-- HERO ─────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+
+    <div class="hero-inner">
+
+      <!-- left col -->
+      <div class="hero-left">
+        <div class="hero-badge fade-in fd1">Available for new projects</div>
+
+        <h1 class="hero-name fade-in fd2">
+          Rasim<br><span class="hl">Abbasov</span>
+        </h1>
+        <p class="hero-role fade-in fd2">.NET Developer</p>
+        <p class="hero-desc fade-in fd3">
+          I design and build digital products that are fast, accessible, and
+          beautifully crafted — from architecture to pixel.
+        </p>
+
+        <div class="hero-btns fade-in fd4">
+          <button class="btn-primary" onclick="navTo('projects-anchor')">View Projects ↗</button>
+          <button class="btn-ghost" onclick="showPage('resume')">Download CV</button>
+        </div>
+
+        <div class="hero-stats fade-in fd4">
+          <div><div class="stat-num">2<span>+</span></div><div class="stat-lbl">YEARS EXP</div></div>
+          <div><div class="stat-num">10<span>+</span></div><div class="stat-lbl">PROJECTS</div></div>
+        </div>
+      </div>
+
+      <!-- right col -->
+      <div class="hero-right fade-in fd3">
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <img src="https://img.freepik.com/free-photo/young-handsome-man-wearing-casual-tshirt-blue-background-happy-face-smiling-with-crossed-arms-looking-camera-positive-person_839833-12963.jpg?semt=ais_hybrid&w=740&q=80" alt="Rasim Abbasov" />
+            <div class="hero-card-badge">
+              <div>
+                <div class="badge-name">Rasim Abbasov</div>
+                <div class="badge-role">.NET Developer</div>
+              </div>
+              <div class="avail-dot">Open</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-snippet">
+          <div><span class="ln">1</span><span class="c-comment">// Developer.cs</span></div>
+          <div><span class="ln">2</span><span class="c-kw">public record</span> <span class="c-fn">Developer</span>(</div>
+          <div><span class="ln">3</span>&nbsp;&nbsp;<span class="c-kw">string</span>   <span class="c-prop">Name</span>      = <span class="c-str">"Rasim Abbasov"</span>,</div>
+          <div><span class="ln">4</span>&nbsp;&nbsp;<span class="c-kw">string</span>[] <span class="c-prop">Stack</span>     = [<span class="c-str">".NET"</span>, <span class="c-str">"C#"</span>, <span class="c-str">"SQL"</span>],</div>
+          <div><span class="ln">5</span>&nbsp;&nbsp;<span class="c-kw">long</span>     <span class="c-prop">Coffee</span>    = <span class="c-kw">long</span>.<span class="c-fn">MaxValue</span>,</div>
+          <div><span class="ln">6</span>&nbsp;&nbsp;<span class="c-kw">bool</span>     <span class="c-prop">Available</span> = <span class="c-kw">true</span></div>
+          <div><span class="ln">7</span>);</div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- /hero -->
+
+
+  <!-- ABOUT ────────────────────────────────── -->
+  <section class="section about-section" id="about-anchor">
+    <div class="section-inner">
+      <div class="section-tag">// about.me</div>
+      <h2 class="section-title">Turning ideas into <span class="dim">elegant software</span></h2>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a <strong>.NET Developer</strong> based in Baku with a deep passion for crafting
+            high-performance web applications and intuitive user interfaces.
+            With 2+ years of professional experience, I've worked across startups and enterprise teams.
+          </p>
+          <p>
+            My approach combines <strong>clean architecture</strong> with beautiful design.
+            I believe that good code and great design are not in opposition — they reinforce each other.
+          </p>
+          <p>
+            When I'm not coding, I'm contributing to open source, writing technical articles,
+            or experimenting with new patterns in .NET ecosystem.
+          </p>
+          <div class="skill-pills">
+            <span class="pill">C#</span>
+            <span class="pill">ASP.NET Core</span>
+            <span class="pill">LINQ</span>
+            <span class="pill">RESTful APIs</span>
+            <span class="pill">MS SQL</span>
+            <span class="pill">Azure</span>
+            <span class="pill">Docker</span>
+            <span class="pill">Entity Framework Core</span>
+            <span class="pill">xUnit</span>
+            <span class="pill">Swagger</span>
+            <span class="pill">HTML5 / CSS3</span>
+            <span class="pill">React</span>
+            <span class="pill">TypeScript</span>
+          </div>
+        </div>
+
+        <div class="info-stack">
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <div><div class="info-lbl">// location</div><div class="info-val">Baku, Azerbaijan</div></div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">🎓</div>
+            <div><div class="info-lbl">// education</div><div class="info-val">B.S. Computer Science, Baku State University</div></div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">💼</div>
+            <div><div class="info-lbl">// experience</div><div class="info-val">2+ Years</div></div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">🌐</div>
+            <div><div class="info-lbl">// languages</div><div class="info-val">Azerbaijani, English, Turkish</div></div>
+          </div>
+          <div class="mini-code">
+            <div><span class="ln">1</span><span class="c-comment">// Passion.cs</span></div>
+            <div><span class="ln">2</span><span class="c-kw">var</span> <span class="c-prop">focus</span> = <span class="c-fn">GetInterests</span>()</div>
+            <div><span class="ln">3</span>&nbsp;&nbsp;.<span class="c-fn">Where</span>(i =&gt; i.<span class="c-prop">IsOptimized</span>)</div>
+            <div><span class="ln">4</span>&nbsp;&nbsp;.<span class="c-fn">Select</span>(i =&gt; i.<span class="c-prop">ScaleToMassive</span>)</div>
+            <div><span class="ln">5</span>&nbsp;&nbsp;.<span class="c-fn">ToList</span>();</div>
+            <div><span class="ln">6</span><span class="c-comment">// ["Clean Arch","Scalability","SOLID"]</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- /about -->
+
+
+  <!-- SKILLS ───────────────────────────────── -->
+  <section class="section skills-section">
+    <div class="section-inner">
+      <div class="section-tag">// skills.stack</div>
+      <h2 class="section-title">My technical toolkit</h2>
+      <p class="section-subtitle">A curated set of technologies I rely on to ship production-grade software.</p>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-card-icon">🔧</div>
+          <div class="skill-card-title">Backend</div>
+          <div class="skill-card-list">
+            <em>C# 12 / .NET 8</em><br>
+            ASP.NET Core<br>
+            Entity Framework Core / LINQ<br>
+            SQL Server
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon">☁️</div>
+          <div class="skill-card-title">Cloud &amp; DevOps</div>
+          <div class="skill-card-list">
+            <em>Azure</em> App Services / SQL<br>
+            Docker<br>
+            GitHub Actions / CI/CD
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon">🧪</div>
+          <div class="skill-card-title">Architecture &amp; Quality</div>
+          <div class="skill-card-list">
+            <em>xUnit / Moq</em><br>
+            Swagger / Seq (Logging)<br>
+            Clean Code / SOLID<br>
+            Onion Architecture
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon">⚡</div>
+          <div class="skill-card-title">Frontend</div>
+          <div class="skill-card-list">
+            <em>HTML5 / CSS3</em><br>
+            JavaScript / TypeScript<br>
+            Razor Pages / MVC Views<br>
+            React / Tailwind (Basics)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- /skills -->
+
+
+  <!-- PROJECTS ─────────────────────────────── -->
+  <!-- Cards link to project.html?id=... via showProject() -->
+  <section class="section projects-section" id="projects-anchor">
+    <div class="section-inner">
+      <div class="section-tag">// projects.featured[]</div>
+      <h2 class="section-title">Selected work</h2>
+      <p class="section-subtitle">A handful of projects I'm most proud of — spanning product, tooling, and creative tech.</p>
+
+      <div class="projects-grid">
+
+        <!-- Card 1 · Order Management API -->
+        <div class="proj-card" onclick="showProject('api')">
+          <div class="proj-thumb" style="background:linear-gradient(135deg,#060e1c 0%,#0f1f40 100%)">
+            <div class="proj-thumb-code">[ApiController]
+[Route("api/[controller]")]
+public class OrdersController
+  : ControllerBase
+{
+  [HttpPost]
+  public async Task&lt;IActionResult&gt;
+    Create(CreateOrderCommand c)
+    =&gt; Ok(await _med.Send(c));
+}</div>
+            <div class="proj-thumb-badge">REST API</div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="tag tag-blue">ASP.NET Core</span>
+              <span class="tag tag-green">EF Core</span>
+              <span class="tag tag-orange">SQL Server</span>
+            </div>
+            <div class="proj-title">Nois - Clothing Shop </div>
+            <div class="proj-desc">Full-featured REST API with CQRS via MediatR, EF Core repositories, and JWT auth.</div>
+            <div class="proj-footer">
+              <a class="proj-link" href="#" target="_blank">For more →</a>
+              <span class="proj-year">2024</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 · Live Analytics Dashboard -->
+        <div class="proj-card" onclick="showProject('dashboard')">
+          <div class="proj-thumb" style="background:linear-gradient(135deg,#061208 0%,#0a2010 100%)">
+            <div class="proj-thumb-code">public class MetricsHub : Hub
+{
+  public async Task Subscribe(
+    string tenantId)
+  {
+    await Groups
+      .AddToGroupAsync(
+        Context.ConnectionId,
+        tenantId);
+  }
+}</div>
+            <div class="proj-thumb-badge">SignalR</div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="tag tag-green">SignalR</span>
+              <span class="tag tag-purple">Azure</span>
+              <span class="tag tag-blue">Blazor</span>
+            </div>
+            <div class="proj-title">FireCup</div>
+            <div class="proj-desc">Real-time metrics platform with SignalR hubs, Azure Redis backplane, and Blazor WASM frontend.</div>
+            <div class="proj-footer">
+              <a class="proj-link" href="#" target="_blank">For more →</a>
+              <span class="proj-year">2024</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 · Auth Service -->
+        <!-- <div class="proj-card" onclick="showProject('auth')">
+          <div class="proj-thumb" style="background:linear-gradient(135deg,#0d0618 0%,#1a0d30 100%)">
+            <div class="proj-thumb-code">builder.Services
+  .AddAuthentication(
+    JwtBearerDefaults.Scheme)
+  .AddJwtBearer(opts =&gt; {
+    opts.TokenValidation
+      Parameters = new() {
+        ValidateIssuer = true,
+        ValidateLifetime = true
+    };
+  });</div>
+            <div class="proj-thumb-badge">Auth</div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="tag tag-purple">JWT / OAuth</span>
+              <span class="tag tag-blue">ASP.NET Identity</span>
+              <span class="tag tag-green">Azure AD</span>
+            </div>
+            <div class="proj-title">Identity &amp; Auth Service</div>
+            <div class="proj-desc">Centralized auth microservice with JWT, refresh tokens, role-based claims, and Azure AD integration.</div>
+            <div class="proj-footer">
+              <a class="proj-link" href="#" target="_blank">For more →</a>
+              <span class="proj-year">2023</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div> -->
+  </section><!-- /projects -->
+
+
+  <!-- CONTACT ──────────────────────────────── -->
+  <section class="section contact-section" id="contact-anchor">
+    <div class="section-inner">
+      <div class="section-tag">// contact.init()</div>
+      <h2 class="section-title">Let's build something<br><span class="dim">together</span></h2>
+      <p class="section-subtitle">I'm currently taking on new projects. Have an idea or just want to chat? I'd love to hear from you.</p>
+
+      <div class="contact-layout">
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div><div class="contact-lbl">// email</div><div class="contact-val"><a href="mailto:rasimabbasov999@gmail.com">rasimabbasov999@gmail.com</a></div></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div><div class="contact-lbl">// location</div><div class="contact-val">Baku, Azerbaijan</div></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">⏱</div>
+            <div><div class="contact-lbl">// response</div><div class="contact-val">Usually within 24 hours</div></div>
+          </div>
+
+          <div class="socials">
+            <a class="social" href="https://github.com/RasimAbbasov" target="_blank" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a class="social" href="https://linkedin.com/in/rasimabbasov" target="_blank" title="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+
+          <div class="mini-code">
+            <div><span class="c-comment">// ContactService.cs</span></div>
+            <div><span class="c-kw">public async</span> <span class="c-type">Task</span>&lt;<span class="c-type">IResult</span>&gt;</div>
+            <div>&nbsp;&nbsp;<span class="c-fn">ReplyAsync</span>(<span class="c-type">MessageDto</span> msg,</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-type">CancellationToken</span> ct) {</div>
+            <div>&nbsp;&nbsp;<span class="c-kw">await</span> _mailer.<span class="c-fn">SendAsync</span>(msg, ct);</div>
+            <div>&nbsp;&nbsp;<span class="c-kw">return</span> <span class="c-type">Results</span>.<span class="c-fn">Ok</span>();</div>
+            <div>}</div>
+          </div>
+        </div>
+
+      <div class="contact-form">
+  <div class="form-row">
+    <div class="form-group">
+      <label>first_name</label>
+      <input type="text" id="firstName" placeholder="John" required />
+    </div>
+    <div class="form-group">
+      <label>last_name</label>
+      <input type="text" id="lastName" placeholder="Doe" required />
+    </div>
+  </div>
+  <div class="form-group">
+    <label>email</label>
+    <input type="email" id="userEmail" placeholder="john@company.com" required />
+  </div>
+  <div class="form-group">
+    <label>subject</label>
+    <input type="text" id="subject" placeholder="Project inquiry..." required />
+  </div>
+  <div class="form-group">
+    <label>message</label>
+    <textarea id="message" placeholder="Tell me about your project..." required></textarea>
+  </div>
+  <button class="form-submit" id="contactBtn" onclick="handleContact()">
+    Send Message ↗
+  </button>
+</div>
+      </div>
+    </div>
+  </section><!-- /contact -->
+
+  <footer>
+    <div class="footer-copy">© 2026 <span>Rasim Abbasov</span> — All rights reserved</div>
+    <div class="footer-note">// rasimabbasov.site</div>
+  </footer>
+
+</div><!-- /page-home -->
+
+
+<!-- ═══════════════════════════════════════════
+     RESUME PAGE
+═══════════════════════════════════════════ -->
+<div class="page" id="page-resume">
+
+  <div class="resume-hero">
+    <div class="resume-hero-inner">
+      <button class="back-btn" onclick="showPage('home')">← Back to Home</button>
+      <div class="section-tag">// resume.pdf</div>
+      <h1>Rasim Abbasov</h1>
+      <p class="sub">.NET Developer</p>
+      <p class="meta">Baku, Azerbaijan · rasimabbasov999@gmail.com · github.com/RasimAbbasov</p>
+      <button class="resume-dl">↓ Download PDF Resume</button>
+    </div>
+  </div>
+
+  <div class="resume-body">
+    <div class="resume-inner">
+
+      <!-- Experience -->
+      <div class="resume-block">
+        <div class="resume-block-header">
+          <div class="resume-block-icon">💼</div>
+          <div class="resume-block-title">Work Experience</div>
+        </div>
+
+        <div class="resume-entry">
+          <div>
+            <div class="entry-title">Quality Assurance Intern</div>
+            <div class="entry-company">Azerconnect Group — Baku, Azerbaijan</div>
+            <ul class="entry-desc">
+              <li>Designed and maintained RESTful APIs in ASP.NET Core serving 50k+ daily requests</li>
+              <li>Implemented EF Core migrations, query optimisation, and SQL Server stored procedures</li>
+              <li>Integrated Azure App Services, Blob Storage, and Azure DevOps CI/CD pipelines</li>
+            </ul>
+          </div>
+          <div class="entry-date">2025 — Present</div>
+        </div>
+
+        <!-- <div class="mini-code" style="margin-top:16px">
+          <div><span class="c-comment">// PerformanceTuning.cs — 2024</span></div>
+          <div>services.<span class="c-fn">AddOutputCache</span>(opts =&gt;</div>
+          <div>{</div>
+          <div>&nbsp;&nbsp;opts.<span class="c-fn">AddBasePolicy</span>(b =&gt;</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;b.<span class="c-fn">Expire</span>(<span class="c-type">TimeSpan</span>.<span class="c-fn">FromMinutes</span>(<span class="c-num">5</span>)));</div>
+          <div>}); <span class="c-comment">// → response time ↓ 38% 🚀</span></div>
+        </div>
+      </div> -->
+
+      <!-- Education -->
+      <div class="resume-block">
+        <div class="resume-block-header">
+          <div class="resume-block-icon">🎓</div>
+          <div class="resume-block-title">Education</div>
+        </div>
+        <div class="resume-entry">
+          <div>
+            <div class="entry-title">B.S. Computer Science</div>
+            <div class="entry-company">Baku State University — Baku, Azerbaijan</div>
+            <p class="entry-desc" style="padding:0">
+              Focused on Algorithms, Software Engineering, and Database Systems.
+            </p>
+          </div>
+          <div class="entry-date">2023 — 2027</div>
+        </div>
+        <div class="resume-entry">
+          <div>
+            <div class="entry-title">FullStack Development</div>
+            <div class="entry-company">Code Academy — Baku, Azerbaijan</div>
+            <p class="entry-desc" style="padding:0">
+              Focused on Algorithms, Software Engineering, and Database Systems.
+            </p>
+          </div>
+          <div class="entry-date">2024 — 2025</div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="resume-block">
+        <div class="resume-block-header">
+          <div class="resume-block-icon">⚡</div>
+          <div class="resume-block-title">Technical Skills</div>
+        </div>
+        <div class="skill-bars-grid">
+          <div class="skill-bar-item">
+            <div class="skill-bar-name">C# / .NET 8</div>
+            <div class="bar-track"><div class="bar-fill" style="width:92%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-name">ASP.NET Core</div>
+            <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-name">Entity Framework Core</div>
+            <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-name">SQL Server / Azure</div>
+            <div class="bar-track"><div class="bar-fill" style="width:82%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-name">Docker / DevOps</div>
+            <div class="bar-track"><div class="bar-fill" style="width:75%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-name">React / TypeScript</div>
+            <div class="bar-track"><div class="bar-fill" style="width:65%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="resume-block">
+        <div class="resume-block-header">
+          <div class="resume-block-icon">🏅</div>
+          <div class="resume-block-title">Certifications</div>
+        </div>
+        <div class="resume-entry">
+          <div>
+            <div class="entry-title">Foundations of Coding Back-End</div>
+            <div class="entry-company">Microsoft</div>
+          </div>
+          <div class="entry-date">2025</div>
+        </div>
+        <div class="resume-entry">
+          <div>
+            <div class="entry-title">Microsoft Certified: Azure Developer Associate (AZ-204)</div>
+            <div class="entry-company">Microsoft</div>
+          </div>
+          <div class="entry-date">2024</div>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- /resume-body -->
+
+  <footer>
+    <div class="footer-copy">© 2026 <span>Rasim Abbasov</span></div>
+    <div class="footer-note">// resume.v1.0</div>
+  </footer>
+
+</div><!-- /page-resume -->
+
+
+<!-- ═══════════════════════════════════════════
+     JS
+═══════════════════════════════════════════ -->
+<script>
+  function showPage(name) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    const target = document.getElementById('page-' + name);
+    if (target) { target.classList.add('active'); window.scrollTo(0, 0); }
+    document.querySelectorAll('#nav-home, #nav-resume').forEach(el => el.classList.remove('active'));
+    if (name === 'home')   document.getElementById('nav-home')?.classList.add('active');
+    if (name === 'resume') document.getElementById('nav-resume')?.classList.add('active');
+  }
+
+
+  function navTo(anchor) {
+    showPage('home');
+    setTimeout(() => {
+      document.getElementById(anchor)?.scrollIntoView({ behavior: 'smooth' });
+    }, 50);
+  }
+
+ function handleContact() {
+  const btn = document.getElementById('contactBtn');
+  
+  // 1. Get all the input elements
+  const inputs = document.querySelectorAll('.contact-form input, .contact-form textarea');
+  
+  // 2. Check if all "required" fields are actually filled
+  let allFilled = true;
+  inputs.forEach(input => {
+    if (!input.checkValidity()) {
+      input.reportValidity(); // This shows the "Please fill out this field" bubble
+      allFilled = false;
+    }
+  });
+
+  // 3. Only proceed if the form is valid
+  if (allFilled) {
+    const fName = document.getElementById('firstName').value;
+    const lName = document.getElementById('lastName').value;
+    const email = document.getElementById('userEmail').value;
+    const subj = document.getElementById('subject').value;
+    const msg = document.getElementById('message').value;
+
+    const myEmail = "your-email@example.com"; 
+    const bodyText = `From: ${fName} ${lName}\nEmail: ${email}\n\n${msg}`;
+    
+    // Open the email app
+    const mailtoLink = `mailto:${myEmail}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(bodyText)}`;
+    window.location.href = mailtoLink;
+
+    // Show your success animation
+    btn.textContent = '✓ Message Sent!';
+    btn.classList.add('sent');
+    
+    setTimeout(() => {
+      btn.textContent = 'Send Message ↗';
+      btn.classList.remove('sent');
+    }, 3000);
+  }
+}
+
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('mainNav');
+    nav.style.borderBottomColor = window.scrollY > 10
+      ? 'rgba(43,127,255,0.18)'
+      : 'rgba(255,255,255,0.06)';
+  });
+</script>
+
+</body>
+</html>
